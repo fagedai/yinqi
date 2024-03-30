@@ -2,8 +2,8 @@
 import { ref } from 'vue'
 
 const list = ref([
-    { path: '/', name: 'Home|主页' },
-    { path: '/about', name: 'About|关于本司' },
+    { path: '/home/content', name: 'Home|主页' },
+    { path: '/home/about', name: 'About|关于本司' },
     { path: '/', name: 'Service|服务' },
     { path: '/', name: 'Model Library|模型库' },
     { path: '/', name: 'Pricing|定价' },
