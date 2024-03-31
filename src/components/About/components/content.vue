@@ -5,7 +5,7 @@
 <template>
     <div class="about mt-100">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header animate__animated animate__fadeInUp">
                 <h2>About Us</h2>
                 <p>
                     深圳市印奇科技有限公司，创立于2023年5月，深植于“创意之都”深圳，扎根于新型应用型高校深圳技术大学，是主要面向深圳范围内各高校师生的3D打印、定制化建模设计、成品制作全流程服务提供商，根据客户的定制需求设计、生产或制作产品。
