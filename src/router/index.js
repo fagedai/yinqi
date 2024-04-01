@@ -11,6 +11,8 @@ const router = createRouter({
             redirect: '/home/content'
         },
         {
+            path:'/:pathMatch(.*)',
+            component:()=>import('@/components/Wrong/index.vue')
 
         },
         {
