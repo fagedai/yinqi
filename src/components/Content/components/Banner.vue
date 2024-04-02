@@ -39,11 +39,5 @@ const bannerList = ref([
 </template>
 
 <style scoped>
-.header {
-    position: relative;
-    width: 100%;
-    background: #ffffff;
-    margin-top: 100px;
-    top: 50px
-}
+
 </style>
