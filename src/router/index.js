@@ -62,6 +62,7 @@ const router = createRouter({
                     name:'contact',
                     component: ()=>import('@/components/Contact/index.vue'),
                 },
+<<<<<<< HEAD
                 {
                     path: "/home/contact",
                     name:'contact',
@@ -77,6 +78,8 @@ const router = createRouter({
                     name:'service',
                     component: ()=>import('@/components/Service/index.vue'),
                 },
+=======
+>>>>>>> 0045e19fa3dc00744878c08a88b0f60f1362f058
 
 
             ]

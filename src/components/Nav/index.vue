@@ -4,8 +4,13 @@ import { ref } from "vue";
 const list = ref([
   { path: "/home/content", name: "Home|主页" },
   { path: "/home/about", name: "About|关于本司" },
+<<<<<<< HEAD
   { path: "/home/service", name: "Service|服务" },
   { path: "/home/model", name: "Model Library|模型库" },
+=======
+  { path: "/", name: "Service|服务" },
+  { path: "/", name: "Model Library|模型库" },
+>>>>>>> 0045e19fa3dc00744878c08a88b0f60f1362f058
   { path: "/home/pricing", name: "Pricing|定价" },
   { path: "/", name: "PAGES" },
   { path: "/home/contact", name: "Contact|联系" },
