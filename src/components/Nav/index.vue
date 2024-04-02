@@ -4,15 +4,10 @@ import { ref } from "vue";
 const list = ref([
   { path: "/home/content", name: "Home|主页" },
   { path: "/home/about", name: "About|关于本司" },
-<<<<<<< HEAD
   { path: "/home/service", name: "Service|服务" },
   { path: "/home/model", name: "Model Library|模型库" },
-=======
-  { path: "/", name: "Service|服务" },
-  { path: "/", name: "Model Library|模型库" },
->>>>>>> 0045e19fa3dc00744878c08a88b0f60f1362f058
   { path: "/home/pricing", name: "Pricing|定价" },
-  { path: "/", name: "PAGES" },
+  { path: "", name: "PAGES" },
   { path: "/home/contact", name: "Contact|联系" },
 ]);
 const drop_list = ref([
@@ -37,56 +32,30 @@ const isIndexActive = (index) => {
         <router-link to="/" class="navbar-brand">
           <img src="/src/assets/newLogo.png" alt="Logo" />
         </router-link>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarCollapse"
-        >
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
           <div class="navbar-nav ml-auto">
-            <router-link
-              v-for="(route, index) in list"
-              :key="index"
-              :to="route.path"
-              class="nav-item nav-link"
-              :class="{ active: isIndexActive(index) }"
-              @mouseenter="curIdx = index"
-              @mouseout="curIdx = -1"
-              @click="actIdx = index"
-            >
+            <router-link v-for="(route, index) in list" :key="index" :to="route.path" class="nav-item nav-link"
+              :class="{ active: isIndexActive(index) }" @mouseenter="curIdx = index" @mouseout="curIdx = -1"
+              @click="actIdx = index">
               <span v-if="route.name !== 'PAGES'">{{ route.name }}</span>
-              <div
-                v-else
-                class="dropdown dropdown-toggle"
-                @mouseenter="menushow = true"
-                @mouseleave="menushow = false"
-              >
+              <div v-else class="dropdown dropdown-toggle" @mouseenter="menushow = true" @mouseleave="menushow = false">
                 <span>{{ route.name }}</span>
-                <div
-                  class="dropdown-menu"
-                  :class="{ show: menushow }"
-                  @mouseenter="menushow = true"
-                  @mouseleave="menushow = false"
-                >
-                  <router-link
-                    v-for="(route, index) in drop_list"
-                    :key="index"
-                    :to="route.path"
-                    class="dropdown-item"
-                    @mouseenter="menushow = true"
-                    @mouseleave="menushow = false"
-                  >
+                <div class="dropdown-menu" :class="{ show: menushow }" @mouseenter="menushow = true"
+                  @mouseleave="menushow = false">
+                  <router-link v-for="(route, index) in drop_list" :key="index" :to="route.path" class="dropdown-item"
+                    @mouseenter="menushow = true" @mouseleave="menushow = false">
                     {{ route.name }}
                   </router-link>
                 </div>
               </div>
+            </router-link>
+            <router-link to="/login" class="user nav-item nav-link">
+              <img src="@/assets/登录.png" alt="">
+              登录
             </router-link>
           </div>
         </div>
@@ -94,3 +63,15 @@ const isIndexActive = (index) => {
     </div>
   </div>
 </template>
+
+<style scoped>
+.user {
+  display: flex;
+  justify-content: center;
+  width: 85px;
+  height: 40px;
+  margin-left: 10px;
+  background-color: red;
+  border-radius: 10px;
+}
+</style>

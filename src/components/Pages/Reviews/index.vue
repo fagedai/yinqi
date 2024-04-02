@@ -4,7 +4,7 @@
 <template>
   <div class="testimonials mt-100">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header animate__animated animate__fadeInUp">
         <h2>Reviews</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque

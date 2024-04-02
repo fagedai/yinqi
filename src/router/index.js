@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/HomeView.vue';
 import About from '@/views/AboutView.vue';
+import Login from '@/views/LoginView.vue'
 import Content from '@/components/Content/index.vue';
 
 const router = createRouter({
@@ -11,8 +12,8 @@ const router = createRouter({
             redirect: '/home/content'
         },
         {
-            path:'/:pathMatch(.*)',
-            component:()=>import('@/components/Wrong/index.vue')
+            path: '/:pathMatch(.*)',
+            component: () => import('@/components/Wrong/index.vue')
 
         },
         {
@@ -29,61 +30,60 @@ const router = createRouter({
                 },
                 {
                     path: "/home/pricing",
-                    name:'pricing',
-                    component: ()=>import('@/components/Pricing/index.vue'),
+                    name: 'pricing',
+                    component: () => import('@/components/Pricing/index.vue'),
                 },
                 {
                     path: "/home/skills",
-                    name:'skills',
-                    component: ()=>import('@/components/Pages/Skills/index.vue'),
+                    name: 'skills',
+                    component: () => import('@/components/Pages/Skills/index.vue'),
                 },
                 {
                     path: "/home/team",
-                    name:'team',
-                    component: ()=>import('@/components/Pages/TeamMembers/index.vue'),
+                    name: 'team',
+                    component: () => import('@/components/Pages/TeamMembers/index.vue'),
                 },
                 {
                     path: "/home/reviews",
-                    name:'reviews',
-                    component: ()=>import('@/components/Pages/Reviews/index.vue'),
+                    name: 'reviews',
+                    component: () => import('@/components/Pages/Reviews/index.vue'),
                 },
                 {
                     path: "/home/clients",
-                    name:'clients',
-                    component: ()=>import('@/components/Pages/Clients/index.vue'),
+                    name: 'clients',
+                    component: () => import('@/components/Pages/Clients/index.vue'),
                 },
                 {
                     path: "/home/single",
-                    name:'single',
-                    component: ()=>import('@/components/Pages/SinglePage/index.vue'),
+                    name: 'single',
+                    component: () => import('@/components/Pages/SinglePage/index.vue'),
                 },
                 {
                     path: "/home/contact",
-                    name:'contact',
-                    component: ()=>import('@/components/Contact/index.vue'),
+                    name: 'contact',
+                    component: () => import('@/components/Contact/index.vue'),
                 },
-<<<<<<< HEAD
                 {
                     path: "/home/contact",
-                    name:'contact',
-                    component: ()=>import('@/components/Contact/index.vue'),
+                    name: 'contact',
+                    component: () => import('@/components/Contact/index.vue'),
                 },
                 {
                     path: "/home/model",
-                    name:'model',
-                    component: ()=>import('@/components/Model_Library/index.vue'),
+                    name: 'model',
+                    component: () => import('@/components/Model_Library/index.vue'),
                 },
                 {
                     path: "/home/service",
-                    name:'service',
-                    component: ()=>import('@/components/Service/index.vue'),
+                    name: 'service',
+                    component: () => import('@/components/Service/index.vue'),
                 },
-=======
->>>>>>> 0045e19fa3dc00744878c08a88b0f60f1362f058
-
-
             ]
         },
+        {
+            path: "/login",
+            component: Login,
+        }
     ],
     scrollBehavior() {
         return {

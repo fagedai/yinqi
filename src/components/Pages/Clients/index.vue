@@ -4,7 +4,7 @@
 <template>
   <div class="clients mt-100">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header animate__animated animate__fadeInUp">
         <h2>Our Clients</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque

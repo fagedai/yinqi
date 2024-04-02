@@ -4,7 +4,7 @@
 <template>
   <div class="pricing mt-100">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header animate__animated animate__fadeInUp">
         <h2>Our Pricing</h2>
         <p>
           Pellentesque habitant morbi tristique senectus et netus et malesuada
@@ -30,8 +30,7 @@
                 <i class="ion-md-checkmark"></i><strong>Bootstrap 4</strong>
               </li>
               <li>
-                <i class="ion-md-checkmark"></i
-                ><strong>Well-commented</strong> code
+                <i class="ion-md-checkmark"></i><strong>Well-commented</strong> code
               </li>
               <li>
                 <i class="ion-md-close"></i><strong>IonIcons</strong> integrated
@@ -66,12 +65,10 @@
                 <i class="ion-md-checkmark"></i><strong>Bootstrap 4</strong>
               </li>
               <li>
-                <i class="ion-md-checkmark"></i
-                ><strong>Well-commented</strong> code
+                <i class="ion-md-checkmark"></i><strong>Well-commented</strong> code
               </li>
               <li>
-                <i class="ion-md-checkmark"></i
-                ><strong>IonIcons</strong> integrated
+                <i class="ion-md-checkmark"></i><strong>IonIcons</strong> integrated
               </li>
               <li>
                 <i class="ion-md-checkmark"></i>Free
@@ -81,9 +78,7 @@
                 <i class="ion-md-close"></i><strong>Responsive</strong> design
               </li>
             </ul>
-            <a href="#" class="btn mian-btn price-btn features-price-btn"
-              >Buy Now</a
-            >
+            <a href="#" class="btn mian-btn price-btn features-price-btn">Buy Now</a>
           </div>
         </div>
         <div class="col-md-4">
@@ -104,20 +99,17 @@
                 <i class="ion-md-checkmark"></i><strong>Bootstrap 4</strong>
               </li>
               <li>
-                <i class="ion-md-checkmark"></i
-                ><strong>Well-commented</strong> code
+                <i class="ion-md-checkmark"></i><strong>Well-commented</strong> code
               </li>
               <li>
-                <i class="ion-md-checkmark"></i
-                ><strong>IonIcons</strong> integrated
+                <i class="ion-md-checkmark"></i><strong>IonIcons</strong> integrated
               </li>
               <li>
                 <i class="ion-md-checkmark"></i>Free
                 <strong>Google Font</strong> integrated
               </li>
               <li>
-                <i class="ion-md-checkmark"></i
-                ><strong>Responsive</strong> design
+                <i class="ion-md-checkmark"></i><strong>Responsive</strong> design
               </li>
             </ul>
             <a href="#" class="btn mian-btn price-btn">Buy Now</a>

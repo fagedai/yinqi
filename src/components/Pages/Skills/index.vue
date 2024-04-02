@@ -4,7 +4,7 @@
 <template>
   <div class="skills mt-100">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header animate__animated animate__fadeInUp">
         <h2>Our Skills</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
@@ -21,13 +21,8 @@
               <p>85%</p>
             </div>
             <div class="progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="85"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              </div>
             </div>
 
             <div class="skill-name">
@@ -35,13 +30,8 @@
               <p>95%</p>
             </div>
             <div class="progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="95"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+              </div>
             </div>
 
             <div class="skill-name">
@@ -49,13 +39,8 @@
               <p>80%</p>
             </div>
             <div class="progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              </div>
             </div>
           </div>
         </div>
@@ -67,13 +52,8 @@
               <p>90%</p>
             </div>
             <div class="progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              </div>
             </div>
 
             <div class="skill-name">
@@ -81,13 +61,8 @@
               <p>85%</p>
             </div>
             <div class="progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="85"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              </div>
             </div>
 
             <div class="skill-name">
@@ -95,13 +70,8 @@
               <p>95%</p>
             </div>
             <div class="progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="95"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+              </div>
             </div>
           </div>
         </div>
