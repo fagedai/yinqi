@@ -7,8 +7,7 @@
       <div class="section-header animate__animated animate__fadeInUp">
         <h2>Our Pricing</h2>
         <p>
-          Pellentesque habitant morbi tristique senectus et netus et malesuada
-          fames ac turpis egestas
+          我们提供多种定价方案，以满足不同客户的需求。请查看以下选项，选择最适合您的方案
         </p>
       </div>
       <div class="row">
@@ -43,7 +42,7 @@
                 <i class="ion-md-close"></i><strong>Responsive</strong> design
               </li>
             </ul>
-            s
+
             <a href="#" class="btn mian-btn price-btn">Buy Now</a>
           </div>
         </div>

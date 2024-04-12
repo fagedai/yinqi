@@ -6,8 +6,7 @@
       <div class="section-header animate__animated animate__fadeInUp">
         <h2>Contact Us</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          ac lacus eget nunc imperdiet
+          感谢您对我们感兴趣，我们非常乐意为您提供帮助。如果您有任何问题、建议或需要进一步的信息，请随时通过以下方式与我们联系
         </p>
       </div>
 

@@ -5,7 +5,6 @@ import Service from '../Service/index.vue'
 import Model_Library from '../Model_Library/index.vue'
 import Pricing from '../Pricing/index.vue'
 import Skills from '../Pages/Skills/index.vue'
-import SinglePage from '../Pages/SinglePage/index.vue'
 import TeamMembers from '../Pages/TeamMembers/index.vue'
 
 
@@ -16,9 +15,7 @@ import TeamMembers from '../Pages/TeamMembers/index.vue'
     <About></About>
     <Service></Service>
     <Model_Library></Model_Library>
-    <Pricing></Pricing>
     <Skills></Skills>
-    <SinglePage></SinglePage>
+    <Pricing></Pricing>
     <TeamMembers></TeamMembers>
-
 </template>
