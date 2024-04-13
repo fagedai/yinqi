@@ -17,7 +17,7 @@
               <i class="ion-md-home"></i>
               <p class="price-title">Silver</p>
               <h2 class="price-amount">
-                <span>$</span>9<span>.99</span><span> / m</span>
+                <span>¥</span>19<span>.99</span><span> / 月</span>
               </h2>
             </div>
             <ul class="price-details">
@@ -43,7 +43,7 @@
               </li>
             </ul>
 
-            <a href="#" class="btn mian-btn price-btn">Buy Now</a>
+            <a href="#" class="btn mian-btn price-btn">立刻购买</a>
           </div>
         </div>
         <div class="col-md-4">
@@ -52,7 +52,7 @@
               <i class="ion-md-star"></i>
               <p class="price-title">Gold</p>
               <h2 class="price-amount">
-                <span>$</span>19<span>.99</span><span> / m</span>
+                <span>¥</span>49<span>.99</span><span> / 季</span>
               </h2>
             </div>
             <ul class="price-details">
@@ -77,7 +77,7 @@
                 <i class="ion-md-close"></i><strong>Responsive</strong> design
               </li>
             </ul>
-            <a href="#" class="btn mian-btn price-btn features-price-btn">Buy Now</a>
+            <a href="#" class="btn mian-btn price-btn features-price-btn">立刻购买</a>
           </div>
         </div>
         <div class="col-md-4">
@@ -86,7 +86,7 @@
               <i class="ion-md-gift"></i>
               <p class="price-title">Platinum</p>
               <h2 class="price-amount">
-                <span>$</span>29<span>.99</span><span> / m</span>
+                <span>¥</span>159<span>.99</span><span> / 年</span>
               </h2>
             </div>
             <ul class="price-details">
@@ -111,7 +111,7 @@
                 <i class="ion-md-checkmark"></i><strong>Responsive</strong> design
               </li>
             </ul>
-            <a href="#" class="btn mian-btn price-btn">Buy Now</a>
+            <a href="#" class="btn mian-btn price-btn">立刻购买</a>
           </div>
         </div>
       </div>

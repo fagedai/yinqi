@@ -6,16 +6,17 @@ import Model_Library from '../Model_Library/index.vue'
 import Pricing from '../Pricing/index.vue'
 import Skills from '../Pages/Skills/index.vue'
 import TeamMembers from '../Pages/TeamMembers/index.vue'
-
+import Table from '@/components/Compare/index.vue'
+import Partake from '@/components/Partake/index.vue'
 
 </script>
 
 <template>
     <Banner></Banner>
     <About></About>
-    <Service></Service>
+    <Partake></Partake>
     <Model_Library></Model_Library>
-    <Skills></Skills>
+    <Table></Table>
     <Pricing></Pricing>
     <TeamMembers></TeamMembers>
 </template>

@@ -6,7 +6,7 @@ const list = ref([
   { path: "/home/about", name: "About|关于本司" },
   { path: "/home/service", name: "Service|服务" },
   { path: "/home/model", name: "Model Library|模型库" },
-  { path: "/home/pricing", name: "Pricing|定价" },
+  { path: "/home/pricing", name: "Associator|会员" },
   { path: "", name: "PAGES" },
   { path: "/home/contact", name: "Contact|联系" },
 ]);
