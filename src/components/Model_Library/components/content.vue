@@ -259,12 +259,6 @@ const images = ref([
                         <p>model8</p>
                     </div>
                 </div>
-
-
-
-
-
-
             </div>
         </div>
     </div>
