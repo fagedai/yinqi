@@ -7,8 +7,7 @@
       <div class="section-header animate__animated animate__fadeInUp">
         <h2>Our Pricing</h2>
         <p>
-          Pellentesque habitant morbi tristique senectus et netus et malesuada
-          fames ac turpis egestas
+          我们提供多种定价方案，以满足不同客户的需求。请查看以下选项，选择最适合您的方案
         </p>
       </div>
       <div class="row">
@@ -18,7 +17,7 @@
               <i class="ion-md-home"></i>
               <p class="price-title">Silver</p>
               <h2 class="price-amount">
-                <span>$</span>9<span>.99</span><span> / m</span>
+                <span>¥</span>19<span>.99</span><span> / 月</span>
               </h2>
             </div>
             <ul class="price-details">
@@ -43,8 +42,8 @@
                 <i class="ion-md-close"></i><strong>Responsive</strong> design
               </li>
             </ul>
-            s
-            <a href="#" class="btn mian-btn price-btn">Buy Now</a>
+
+            <a href="#" class="btn mian-btn price-btn">立刻购买</a>
           </div>
         </div>
         <div class="col-md-4">
@@ -53,7 +52,7 @@
               <i class="ion-md-star"></i>
               <p class="price-title">Gold</p>
               <h2 class="price-amount">
-                <span>$</span>19<span>.99</span><span> / m</span>
+                <span>¥</span>49<span>.99</span><span> / 季</span>
               </h2>
             </div>
             <ul class="price-details">
@@ -78,7 +77,7 @@
                 <i class="ion-md-close"></i><strong>Responsive</strong> design
               </li>
             </ul>
-            <a href="#" class="btn mian-btn price-btn features-price-btn">Buy Now</a>
+            <a href="#" class="btn mian-btn price-btn features-price-btn">立刻购买</a>
           </div>
         </div>
         <div class="col-md-4">
@@ -87,7 +86,7 @@
               <i class="ion-md-gift"></i>
               <p class="price-title">Platinum</p>
               <h2 class="price-amount">
-                <span>$</span>29<span>.99</span><span> / m</span>
+                <span>¥</span>159<span>.99</span><span> / 年</span>
               </h2>
             </div>
             <ul class="price-details">
@@ -112,7 +111,7 @@
                 <i class="ion-md-checkmark"></i><strong>Responsive</strong> design
               </li>
             </ul>
-            <a href="#" class="btn mian-btn price-btn">Buy Now</a>
+            <a href="#" class="btn mian-btn price-btn">立刻购买</a>
           </div>
         </div>
       </div>
