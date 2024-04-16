@@ -78,6 +78,11 @@ const router = createRouter({
                     name: 'service',
                     component: () => import('@/components/Service/index.vue'),
                 },
+                {
+                    path:'/home/settings',
+                    name:'settings',
+                    component:()=>import('@/components/Settings/index.vue')
+                }
             ]
         },
         {

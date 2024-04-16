@@ -53,9 +53,9 @@ const isIndexActive = (index) => {
                 </div>
               </div>
             </router-link>
-            <router-link to="/login" class="user nav-item nav-link">
+            <router-link to="/home/settings" class="user nav-item nav-link">
               <img src="@/assets/登录.png" alt="">
-              登录
+              我的
             </router-link>
           </div>
         </div>
