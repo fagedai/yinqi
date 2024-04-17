@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/HomeView.vue';
 import About from '@/views/AboutView.vue';
-import Login from '@/views/LoginView.vue'
 import Content from '@/components/Content/index.vue';
 
 const router = createRouter({
@@ -79,22 +78,18 @@ const router = createRouter({
                     component: () => import('@/components/Service/index.vue'),
                 },
                 {
-                    path:'/home/settings',
-                    name:'settings',
-                    component:()=>import('@/components/Settings/index.vue')
+                    path: '/home/settings',
+                    name: 'settings',
+                    component: () => import('@/components/Settings/index.vue')
                 }
             ]
         },
-        {
-            path: "/login",
-            component: Login,
-        }
     ],
     scrollBehavior() {
         return {
             top: 0
         }
     }
-})
+});
 
 export default router

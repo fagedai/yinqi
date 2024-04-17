@@ -146,52 +146,11 @@ const loginFormRules = ref({
             </select>
             <select class="select_bir">
               <option selected>月份</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
+              <option v-for="i in 12" :key="i">{{ i }}</option>
             </select>
             <select class="select_bir">
               <option selected>日期</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
-              <option>13</option>
-              <option>14</option>
-              <option>15</option>
-              <option>16</option>
-              <option>17</option>
-              <option>18</option>
-              <option>19</option>
-              <option>20</option>
-              <option>21</option>
-              <option>22</option>
-              <option>23</option>
-              <option>24</option>
-              <option>25</option>
-              <option>26</option>
-              <option>27</option>
-              <option>28</option>
-              <option>29</option>
-              <option>30</option>
-              <option>31</option>
+              <option v-for="i in 31" :key="i">{{ i }}</option>
             </select>
           </div>
           <div class="inputbox">
@@ -254,7 +213,9 @@ const loginFormRules = ref({
                     </el-form-item>
                   </el-form>
                   <div class="ret">
-                    <button @click="closeModal">取消</button>
+                    <button @click="closeModal" class="button loginbutton bt2" style="padding: 5px 10px;">
+                      <span>取消</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -392,6 +353,14 @@ b {
   margin-right: 50px;
   margin-left: 0px;
   padding-left: 10px;
+}
+
+.bt2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 30px;
 }
 
 .button {

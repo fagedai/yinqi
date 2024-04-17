@@ -24,6 +24,9 @@ const menushow = ref(false);
 const isIndexActive = (index) => {
   return index === curIdx.value || index === actIdx.value;
 };
+function isMineClick() {
+  actIdx.value = -1
+}
 </script>
 <template>
   <div id="nav">
@@ -53,7 +56,8 @@ const isIndexActive = (index) => {
                 </div>
               </div>
             </router-link>
-            <router-link to="/home/settings" class="user nav-item nav-link">
+            <router-link to="/home/settings" @click="isMineClick" :class="{ user_active: actIdx === -1 }"
+              class="user nav-link">
               <img src="@/assets/登录.png" alt="">
               我的
             </router-link>
@@ -73,5 +77,11 @@ const isIndexActive = (index) => {
   margin-left: 10px;
   background-color: red;
   border-radius: 10px;
+}
+
+.user_active {
+  color: #4F84C4 !important;
+  background: #ffffff;
+  transition: none;
 }
 </style>
