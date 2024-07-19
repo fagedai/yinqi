@@ -1,7 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/HomeView.vue';
-import About from '@/views/AboutView.vue';
-import Content from '@/components/Content/index.vue';
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,70 +14,70 @@ const router = createRouter({
         },
         {
             path: "/home",
-            component: Home,
+            component: () => import('@/views/Home/index.vue'),
             children: [
                 {
                     path: '/home/content',
-                    component: Content
+                    component: () => import('@/views/Content/index.vue'),
                 },
                 {
                     path: "/home/about",
-                    component: About
+                    component: () => import('@/views/About/index.vue'),
                 },
                 {
                     path: "/home/pricing",
                     name: 'pricing',
-                    component: () => import('@/components/Pricing/index.vue'),
+                    component: () => import('@/views/Pricing/index.vue'),
                 },
                 {
                     path: "/home/skills",
                     name: 'skills',
-                    component: () => import('@/components/Pages/Skills/index.vue'),
+                    component: () => import('@/views/Pages/Skills/index.vue'),
                 },
                 {
                     path: "/home/team",
                     name: 'team',
-                    component: () => import('@/components/Pages/TeamMembers/index.vue'),
+                    component: () => import('@/views/Pages/TeamMembers/index.vue'),
                 },
                 {
                     path: "/home/reviews",
                     name: 'reviews',
-                    component: () => import('@/components/Pages/Reviews/index.vue'),
+                    component: () => import('@/views/Pages/Reviews/index.vue'),
                 },
                 {
                     path: "/home/clients",
                     name: 'clients',
-                    component: () => import('@/components/Pages/Clients/index.vue'),
+                    component: () => import('@/views/Pages/Clients/index.vue'),
                 },
                 {
                     path: "/home/single",
                     name: 'single',
-                    component: () => import('@/components/Pages/SinglePage/index.vue'),
+                    component: () => import('@/views/Pages/SinglePage/index.vue'),
                 },
                 {
                     path: "/home/contact",
                     name: 'contact',
-                    component: () => import('@/components/Contact/index.vue'),
+                    component: () => import('@/views/Contact/index.vue'),
                 },
                 {
                     path: "/home/contact",
                     name: 'contact',
-                    component: () => import('@/components/Contact/index.vue'),
+                    component: () => import('@/views/Contact/index.vue'),
                 },
                 {
                     path: "/home/model",
                     name: 'model',
-                    component: () => import('@/components/Model_Library/index.vue'),
+                    component: () => import('@/views/Model_Library/index.vue'),
                 },
                 {
                     path: "/home/service",
                     name: 'service',
-                    component: () => import('@/components/Service/index.vue'),
+                    component: () => import('@/views/Service/index.vue'),
                 },
                 {
                     path: '/home/settings',
                     name: 'settings',
-                    component: () => import('@/components/Settings/index.vue')
+                    component: () => import('@/views/Settings/index.vue')
                 }
             ]
         },

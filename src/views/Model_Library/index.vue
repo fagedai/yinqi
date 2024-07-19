@@ -1,8 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 
-
-
 const images = ref([
     { src: '/src/assets/model1.png' },
     { src: '/src/assets/model2.png' },
@@ -12,14 +10,11 @@ const images = ref([
     { src: '/src/assets/model6.png' },
     { src: '/src/assets/model7.png' },
     { src: '/src/assets/model8.png' },
-
 ])
 
 </script>
 
 <template>
-
-
 
     <div class="portfolio mt-100">
         <div class="container">
