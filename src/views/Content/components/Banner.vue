@@ -21,7 +21,7 @@ const bannerList = ref([
                                     <div class="carousel-content">
                                         <h2>{{ item.first_name }}</h2>
                                         <p>{{ item.second_name }}</p>
-                                        <a class="btn" href="">Read More</a>
+                                        <a class="btn" href="">了解更多</a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -38,6 +38,4 @@ const bannerList = ref([
     </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

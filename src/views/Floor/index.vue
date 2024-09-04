@@ -73,11 +73,9 @@ const list4 = ref([
                     <div class="box"></div>
 
                     <div class="col-lg-3x col-md-6 footer-newsletter">
-                        <h4>Subscription|订阅</h4>
+                        <h4>联系我们</h4>
                         <p>感谢您选择我们！我们始终致力于为客户提供最优质的服务和产品。如有任何疑问或建议，请随时与我们联系。您的支持是我们前进的动力！</p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="订阅">
-                        </form>
+                        <img src="\src\assets\联系我们.jpg" alt="" style="width: 150px; margin-left: 50px;">
                     </div>
                 </div>
             </div>

@@ -97,10 +97,12 @@ const tableData = ref([
 }
 
 .table-cell {
+    display: flex;
     flex: 1;
     padding: 8px;
     border-right: 1px solid #ddd;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .table-cell:last-child {

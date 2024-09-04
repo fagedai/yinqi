@@ -6,7 +6,7 @@
     <div class="about mt-100">
         <div class="container">
             <div class="section-header animate__animated animate__fadeInUp">
-                <h2>About Us</h2>
+                <h2>关于我们</h2>
                 <p>
                     深圳市印奇科技有限公司，创立于2023年5月，深植于“创意之都”深圳，扎根于新型应用型高校深圳技术大学，是主要面向深圳范围内各高校师生的3D打印、定制化建模设计、成品制作全流程服务提供商，根据客户的定制需求设计、生产或制作产品。
                 </p>
@@ -15,15 +15,15 @@
             <div class="row align-items-center">
                 <div class="col-md-12">
                     <div class="about-img">
-                        <img src="/src/assets/about.jpg" alt="" class="img-fluid">
+                        <img src="/src/assets/R-C.jpg" alt="" class="img-fluid">
                     </div>
                     <div class="about-content">
-                        <h2>Welcome to Our Site</h2>
+                        <h2>欢迎来到我们的网页</h2>
                         <p>
                             印奇科技正与深圳技术大学3D打印社合作，双方共同致力于为校园师生提供一个便利性、个性化、高品质、共创性的3D打印云平台。这一产品在启用初期将主要服务校内师生及团体；随后，沂依科技将依托现有资源，助推其进入各大高校3D打印市场，力争成为全国高校商业化3D打印云平台的先行者和引领者。
 
                         </p>
-                        <a class="btn" href="#">Read More</a>
+                        <a class="btn" href="#">了解更多</a>
                     </div>
                 </div>
             </div>
@@ -31,10 +31,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="about-img">
-                        <img src="/src/assets/about-story.jpg" alt="" class="img-fluid">
+                        <img src="/src/assets/R-D.jpg" alt="" class="img-fluid">
                     </div>
                     <div class="about-content">
-                        <h2>Our Story</h2>
+                        <h2>我们的故事</h2>
                         <p>
                             一切始于大学校园里的一个想法。一群对科技和创新充满热情的大学生聚在一起，探讨如何利用3D打印来解决现实生活中的问题。经过无数个深夜的头脑风暴和艰苦的努力，他们决定将这个想法变成现实，于是我们的公司诞生了。
 
@@ -44,22 +44,61 @@
 
                             如今，我们的公司已经成长为一家在3D打印领域具有一定影响力的企业，我们致力于为客户提供高质量、个性化定制的3D打印产品和解决方案。我们始终秉承着初创时的激情和创造力，不断追求技术创新和服务卓越，在未来也会继续为客户创造更大的价值。
                         </p>
-                        <a class="btn" href="#">Read More</a>
+                        <a class="btn" href="#">了解更多</a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="about-img">
-                        <img src="/src/assets/about-goal.jpg" alt="" class="img-fluid">
+                        <img src="/src/assets/R-E.jpg" alt="" class="img-fluid">
                     </div>
                     <div class="about-content">
-                        <h2>Our Goal</h2>
+                        <h2>我们的目标</h2>
                         <p>
                             此外，公司还计划逐步扩大市场，与对航天军工、医疗、文创教育、汽车、艺术品等制造难度较高的产品有着较大生产需求的各类高校合作。这些领域对产品精度、材质和生产效率有着严格的要求，3D打印技术具有明显优势。通过与这些高校的合作，“YY造物”3D打印云平台将为各类复杂产品提供定制化、高效的生产解决方案，助力我国高端制造业的发展。
                         </p>
-                        <a class="btn" href="#">Read More</a>
+                        <a class="btn" href="#">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="team mt-100">
+        <div class="container">
+            <div class="section-header animate__animated animate__fadeInUp">
+                <h2>我们的团队</h2>
+                <p>
+                    我们的3D打印团队由一群对3D技术充满热情的专业人士组成。团队成员拥有丰富的设计和工程经验，以及对材料科学和制造工艺的深入了解。我们团队注重合作与创新，致力于为客户提供最优质的定制化3D打印解决方案。
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 team-item">
+                    <div class="team-img">
+                        <img src="/src/assets/lnnTeam.jpg" class="img-fluid" alt="Team Member" />
+                    </div>
+                    <div class="team-info">
+                        <h3>李娜娜</h3>
+                        <p>副教授</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 team-item">
+                    <div class="team-img">
+                        <img src="/src/assets/fudaoyuan.jpg" class="img-fluid" alt="Team Member" />
+                    </div>
+                    <div class="team-info">
+                        <h3>何彦北</h3>
+                        <p>辅导员</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
+
+<style scoped>
+.row {
+    display: flex;
+    justify-content: center;
+}
+</style>

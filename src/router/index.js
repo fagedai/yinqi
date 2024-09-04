@@ -25,44 +25,9 @@ const router = createRouter({
                     component: () => import('@/views/About/index.vue'),
                 },
                 {
-                    path: "/home/pricing",
-                    name: 'pricing',
-                    component: () => import('@/views/Pricing/index.vue'),
-                },
-                {
                     path: "/home/skills",
                     name: 'skills',
-                    component: () => import('@/views/Pages/Skills/index.vue'),
-                },
-                {
-                    path: "/home/team",
-                    name: 'team',
-                    component: () => import('@/views/Pages/TeamMembers/index.vue'),
-                },
-                {
-                    path: "/home/reviews",
-                    name: 'reviews',
-                    component: () => import('@/views/Pages/Reviews/index.vue'),
-                },
-                {
-                    path: "/home/clients",
-                    name: 'clients',
-                    component: () => import('@/views/Pages/Clients/index.vue'),
-                },
-                {
-                    path: "/home/single",
-                    name: 'single',
-                    component: () => import('@/views/Pages/SinglePage/index.vue'),
-                },
-                {
-                    path: "/home/contact",
-                    name: 'contact',
-                    component: () => import('@/views/Contact/index.vue'),
-                },
-                {
-                    path: "/home/contact",
-                    name: 'contact',
-                    component: () => import('@/views/Contact/index.vue'),
+                    component: () => import('@/views/Skills/index.vue'),
                 },
                 {
                     path: "/home/model",
@@ -77,7 +42,25 @@ const router = createRouter({
                 {
                     path: '/home/settings',
                     name: 'settings',
-                    component: () => import('@/views/Settings/index.vue')
+                    component: () => import('@/views/Settings/index.vue'),
+                    children: [
+                        //重定向，自动跳转到baseMessage
+                        {
+                            path: '',
+                            redirect: '/home/settings/baseMessage'
+                        },
+                        {
+                            path: '/home/settings/baseMessage',
+                            name: 'baseMessage',
+                            component: () => import('@/views/Settings/components/ReightModule/BaseMessage/index.vue'),
+                        },
+                        {
+                            path: '/home/settings/trade',
+                            name: 'trade',
+                            component: () => import('@/views/Settings/components/ReightModule/Trade/index.vue'),
+                        },
+
+                    ]
                 }
             ]
         },
