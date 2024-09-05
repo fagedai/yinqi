@@ -23,6 +23,8 @@ declare module 'vue' {
     ElInput: typeof import('element-plus/es')['ElInput']
     ElRadio: typeof import('element-plus/es')['ElRadio']
     ElRadioGroup: typeof import('element-plus/es')['ElRadioGroup']
+    ElTable: typeof import('element-plus/es')['ElTable']
+    ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
     Floor: typeof import('./src/components/Floor/index.vue')['default']
     Home: typeof import('./src/components/Home/index.vue')['default']
     LoginModel: typeof import('./src/components/Settings/components/LoginModel.vue')['default']

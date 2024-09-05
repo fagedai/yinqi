@@ -1,5 +1,5 @@
 <script setup>
-import { ref, reactive, watch, watchEffect } from 'vue'
+import { ref, reactive, watch, watchEffect, computed } from 'vue'
 import mainMaterial from './hooks/mainMaterial'
 import losserMaterial from './hooks/losserMaterial'
 
@@ -41,16 +41,30 @@ const selectedService = reactive([false, false, false, false, false])
 //备注
 //指定颜色（如果选择了此服务）
 const input = ref('')
-//加急程度（如果选择了此服务）
-const radio = ref(1)
 //其他备注
 const textarea = ref('')
+//输入重量
+const inputWeight = ref('')
+
+//模型价格
+const modelPrice = computed(() => {
+    return showMaterial.value ? showMaterial.value.ch7 * inputWeight.value : 0
+})
+//服务价格
+const servicePrice = computed(() => {
+    const price = modelPrice.value * 1.1
+    return Math.floor(price)
+})
+//总价格
+const totalPrice = computed(() => {
+    return modelPrice.value + servicePrice.value
+})
 </script>
 
 <template>
     <div class="base">
         <div class="head">
-            <h5>3D打印下单平台</h5>
+            <h3>3D打印下单平台</h3>
             <a href="javascript:;">新手下单指引<i> ></i></a>
             <a href="javascript:;">制作打印及其规范<i> ></i></a>
         </div>
@@ -102,39 +116,33 @@ const textarea = ref('')
         <div class="provide_service">
             <div class="title">可选服务添加</div>
             <div class="selectService">
-                <el-checkbox v-model="selectedService[0]" label="指定颜色" size="large" border />
-                <el-checkbox v-model="selectedService[1]" label="模型文件处理" size="large" border />
-                <el-checkbox v-model="selectedService[2]" label="模型后处理" size="large" border />
-                <el-checkbox v-model="selectedService[3]" label="加急" size="large" border />
-                <el-checkbox v-model="selectedService[4]" label="校内送货" size="large" border />
+                <el-checkbox v-model="selectedService[0]" label="模型文件处理(依工作量而定)" size="large" border />
+                <el-checkbox v-model="selectedService[1]" label="模型后处理(依工作量而定)" size="large" border />
+                <br>
+                <el-checkbox v-model="selectedService[2]" label="指定颜色(0.05元/g)" size="large" border />
+                <el-checkbox v-model="selectedService[3]" label="加急(10%~30%)" size="large" border />
+                <el-checkbox v-model="selectedService[4]" label="校内送货(10%~30%)" size="large" border />
             </div>
         </div>
         <div class="attation">
             <div class="title">备注</div>
-            <el-input v-model="input" v-show="selectedService[0] === true" style="width: 240px" class="selected"
+            <el-input v-model="inputWeight" style="width: 240px" class="selected" placeholder="请输入您预计模型的重量(g)" />
+            <el-input v-model="input" v-show="selectedService[2] === true" style="width: 240px" class="selected"
                 placeholder="请输入您需要的颜色" />
-            <div class="select_urgent" v-show="selectedService[3] === true">
-                <p>请选择您需要加急的情况：</p>
-                <el-radio-group v-model="radio">
-                    <el-radio :value="1">普通(10%)</el-radio>
-                    <el-radio :value="2">加急(20%)</el-radio>
-                    <el-radio :value="3">特急(30%)</el-radio>
-                </el-radio-group>
-            </div>
-            <el-input v-model="input" style="width: 240px" class="selected" placeholder="请输入您预计模型的重量(g)" />
             <el-input v-model="textarea" style="width: 950px; margin: 20px;" :autosize="{ minRows: 4, maxRows: 4 }"
                 type="textarea" placeholder="请输入您需要让我们注意的地方" />
         </div>
         <div class="total">
             <div class="title">总计金额</div>
             <p>您模型的金额为(选择耗材单价x重量)：</p>
-            <i>50￥</i>
+            <i>{{ modelPrice }}元</i>
             <br>
+            <!-- 暂定，不知道该怎么计算这个服务金额，统一为第一个的价格 -->
             <p>您选择服务的金额为(根据选择的服务和模型的大小比例)：</p>
-            <i>50￥</i>
+            <i>{{ servicePrice }}元</i>
             <br>
             <p>总计金额为：</p>
-            <i style="font-size: large;">100￥</i>
+            <i style="font-size: 20px;">{{ totalPrice }}元</i>
         </div>
         <el-button type="primary" style="margin-left: 40%; margin: 55px 0 20px 40%;">保存并放至购物车</el-button>
     </div>
@@ -153,7 +161,7 @@ const textarea = ref('')
     padding: 10px;
     width: 100%;
 
-    h5 {
+    h3 {
         float: left;
         color: #000;
     }
@@ -216,12 +224,6 @@ const textarea = ref('')
 }
 
 .attation {
-    .select_urgent {
-        display: flex;
-        align-items: center;
-        margin: 20px 0 0 20px;
-    }
-
     label {
         margin-bottom: 0 !important;
     }
@@ -241,7 +243,7 @@ const textarea = ref('')
     i {
         float: right;
         color: red;
-        margin-right: 20px
+        margin-right: 20%;
     }
 }
 </style>

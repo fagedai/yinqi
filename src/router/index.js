@@ -59,7 +59,11 @@ const router = createRouter({
                             name: 'trade',
                             component: () => import('@/views/Settings/components/ReightModule/Trade/index.vue'),
                         },
-
+                        {
+                            path: '/home/settings/shoppingcart',
+                            name: 'shoppingcart',
+                            component: () => import('@/views/Settings/components/ReightModule/ShoppingCart/index.vue'),
+                        }
                     ]
                 }
             ]

@@ -10,7 +10,7 @@ const list1 = ref([
 ]);
 const list2 = ref([
     { imgpath: "/src/assets/Settings/订单.png", name: "我的订单", id: 6, path: "/home/settings/trade" },
-    { imgpath: "/src/assets/Settings/购物车.png", name: "购物车", id: 7, path: "/home/settings/shopping" },
+    { imgpath: "/src/assets/Settings/购物车.png", name: "购物车", id: 7, path: "/home/settings/shoppingcart" },
 ]);
 const list3 = ref([
     { imgpath: "/src/assets/Settings/yv_shejishi.png", name: "设计师信息", id: 8 },
